@@ -11,7 +11,7 @@ const navigate = useNavigate()
   const logout = async() => {
 
     try {
-       await axios.post("http://localhost:4000/api/Auth/logout",
+       await axios.post("https://railway-backend-production-a56b.up.railway.app/api/Auth/logout",
         {},
             {withCredentials: true}
 

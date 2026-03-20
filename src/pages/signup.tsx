@@ -28,7 +28,7 @@ export default  function Signup() {
         setloader(true)
 
         try {
-            const res = await axios.post("http://localhost:4000/api/Auth/signUp" ,
+            const res = await axios.post("https://railway-backend-production-a56b.up.railway.app/api/Auth/signUp" ,
                 {username , email , password},
                 {withCredentials: true}
             )
