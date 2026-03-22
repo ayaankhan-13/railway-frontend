@@ -15,7 +15,7 @@ export default function Verifyotp () {
 
     const verify = async () => {
     try{
-      const res = await axios.post(`https://railway-backend-production-9329.up.railway.app/verifyOtp/${userId}` , 
+      const res = await axios.post(`https://nurturing-beauty-production-15f9.up.railway.app//verifyOtp/${userId}` , 
             
             
                 { Otp},
@@ -45,7 +45,7 @@ export default function Verifyotp () {
     
     const resend = async () => {
     try{
-      const res = await axios.post(`https://railway-backend-production-9329.up.railway.app/resend/${userId}` , 
+      const res = await axios.post(`https://nurturing-beauty-production-15f9.up.railway.app//resend/${userId}` , 
             {},
             
                 

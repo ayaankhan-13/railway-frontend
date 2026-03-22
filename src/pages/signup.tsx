@@ -28,7 +28,7 @@ export default  function Signup() {
         setloader(true)
 
         try {
-            const res = await axios.post("https://railway-backend-production-9329.up.railway.app/signUp" ,
+            const res = await axios.post("https://nurturing-beauty-production-15f9.up.railway.app//signUp" ,
                 {username , email , password},
                 {withCredentials: true}
             )
