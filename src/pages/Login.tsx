@@ -21,7 +21,7 @@ export default function Login () {
 
         setloader(true)
 try {
-        const res = await axios.post("https://railway-backend-production-a56b.up.railway.app/api/Auth/login",
+        const res = await axios.post("https://nurturing-beauty-production-15f9.up.railway.app/login",
             {email , password},
             {withCredentials: true}
         )

@@ -12,7 +12,7 @@ export default function Schedule() {
 
   const getSchedule = async () => {
     try {
-      const res = await axios.get("https://railway-backend-production-9329.up.railway.app/getTrain");
+      const res = await axios.get("https://nurturing-beauty-production-15f9.up.railway.app/getTrain");
       console.log(res.data);
       setSchedule(res.data.data);
       setloading(false)

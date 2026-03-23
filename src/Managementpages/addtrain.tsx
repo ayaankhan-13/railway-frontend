@@ -41,7 +41,7 @@ if(!TrainName ||!TrainNum ||!DepratureTime||!arrivaltime||!date||!To ||!ticketpr
 try {
 
   
-    const res = await axios.post("https://railway-backend-production-9329.up.railway.app/Addtrain",
+    const res = await axios.post("https://nurturing-beauty-production-15f9.up.railway.app/Addtrain",
         {TrainName , TrainNum , DepratureTime  , arrivaltime, date , To , ticketprice , Category },
         {withCredentials: true}
 

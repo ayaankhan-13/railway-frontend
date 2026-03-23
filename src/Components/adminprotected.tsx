@@ -27,7 +27,7 @@ export default function AdminProtectedRoute({ children }: Props) {
   useEffect(() => {
     const checkAdmin = async () => {
       try {
-        const res = await axios.get("https://nurturing-beauty-production-15f9.up.railway.app//checkAuth", {
+        const res = await axios.get("https://nurturing-beauty-production-15f9.up.railway.app/checkAuth", {
           withCredentials: true,
         });
 
