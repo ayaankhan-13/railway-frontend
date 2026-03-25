@@ -29,7 +29,7 @@ export default function Booking() {
       formData.append("image", image);
 
       const res = await axios.post(
-        `https://nurturing-beauty-production-15f9.up.railway.app/booking/${trainId}`,
+        `${import.meta.env.VITE_FETCH_LINK}/bookticket/${trainId}`,
         formData,
         {
           headers: {

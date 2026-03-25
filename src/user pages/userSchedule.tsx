@@ -20,7 +20,7 @@ export default function Userschedule() {
     
 try {
 
-    const res = await axios.get("https://nurturing-beauty-production-15f9.up.railway.app/getTrain")
+    const res = await axios.get(`${import.meta.env.VITE_FETCH_LINK}/getTrain`)
     
     setUser(res.data.data)
     setloading(false)

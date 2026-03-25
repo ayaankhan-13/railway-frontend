@@ -28,7 +28,7 @@ export default  function Signup() {
         setloader(true)
 
         try {
-            const res = await axios.post("https://nurturing-beauty-production-15f9.up.railway.app/signUp" ,
+            const res = await axios.post( `${import.meta.env.VITE_FETCH_LINK}/signUp` ,
                 {username , email , password},
                 {withCredentials: true}
             )
