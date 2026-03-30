@@ -28,7 +28,7 @@ export default  function Signup() {
         setloader(true)
 
         try {
-            const res = await axios.post( `${import.meta.env.VITE_FETCH_LINK}/signup` ,
+            const res = await axios.post( "https://railway-backend-production-d795.up.railway.app/signUp" ,
                 {username , email , password},
                 {withCredentials: true}
             )
