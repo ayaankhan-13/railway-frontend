@@ -63,7 +63,7 @@ export default function Schedule() {
   const DeleteSchedule = async (id: any) => {
     try {
 
-      const del = await axios.delete(`http://localhost:4000/api/DeleteTrain/${id}`,
+      const del = await axios.delete(`${import.meta.env.VITE_FETCH_LINK}/DeleteTrain/${id}`,
         {withCredentials: true}
       );
       console.log(del.data);

@@ -11,7 +11,7 @@ const navigate = useNavigate()
   const logout = async() => {
 
     try {
-       await axios.post("https://railway-backend-production-9329.up.railway.app/logout",
+       await axios.post(`${import.meta.env.VITE_FETCH_LINK}/logout`,
         {},
             {withCredentials: true}
 
