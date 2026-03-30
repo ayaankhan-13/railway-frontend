@@ -35,6 +35,7 @@ export default  function Signup() {
 
             if(res.data.isSuccessful === true){
                 message.success("Signup sucessfull check your OTP")
+                console.log("res.data", res.data)
                 
                 navigate(`/verifyOtp/${res.data.userId}`)
                 
@@ -50,7 +51,8 @@ export default  function Signup() {
             
 
         } catch (error) {
-            message.error("signup failed")
+            message.error("signup failed" )
+            console.log("error" , error)
         }
         finally {
             setloader(false)
