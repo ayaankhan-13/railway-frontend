@@ -15,7 +15,7 @@ export default function Verifyotp () {
 
     const verify = async () => {
     try{
-      const res = await axios.post(`${import.meta.env.VITE_FETCH_LINK}/verifyOtp/${userId}` , 
+      const res = await axios.post(`https://railway-backend-production-d795.up.railway.app/verifyOtp/${userId}` , 
             
             
                 { Otp},
